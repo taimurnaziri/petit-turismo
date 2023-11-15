@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "usuzi";
+    src: url("USUZI.woff") format('woff');
+}
+body {
+    font-family: Monospace;
+    background-color: #000;
+    color: #fff;
+    margin: 0px;
+    overflow: hidden;
+}
+
+button{
+    font-family: "usuzi";
+    background: url(../assets/images/button.png);
+    width: 181px;
+    height: 43px;
+    border: none;
+    color: #888;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+button:hover{
+    color:#fff;
+}
+
+#reset-btn{
+    display: none;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background:#3B53A2;
+    font-size: 25px;
+    color: #fff;
+    padding: 0;
+}
+
+#car-parts{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 343px;
+    height: 220px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#car-parts img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#part-select{
+    position: absolute;
+    right: 0px;
+    padding: 15px;
+    width: 181px;
+}
+
+#play-btn{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#message{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(120px);
+    width: 300px;
+    font-family: "usuzi";
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 720px) { 
+    #part-select {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% - 30px);
+        justify-content: center;
+    }
+    
+    #part-select button{
+        width: calc(50% - 4px);
+        max-width: 181px;
+        margin: 0 auto 0 auto;
+        padding: 2px 2px;
+        background-size: calc(100% + 2px) 43px;
+        background-repeat: no-repeat;
+    }
+}
