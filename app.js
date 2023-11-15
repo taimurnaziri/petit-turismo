@@ -47,7 +47,6 @@ class Game{
 		
 		const options = {
 			assets:[
-                "/petit-turismo/assets/rc_time_trial.fbx",
 				"/petit-turismo/assets/images/logo.png",
 				"/petit-turismo/assets/images/nx.jpg",
 				"/petit-turismo/assets/images/px.jpg",
