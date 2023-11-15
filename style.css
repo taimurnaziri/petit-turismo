@@ -12,7 +12,7 @@ body {
 
 button{
     font-family: "usuzi";
-    background: url(../assets/images/button.png);
+    background: url(/petit-turismo/assets/images/button.png);
     width: 181px;
     height: 43px;
     border: none;

@@ -26,7 +26,7 @@ class Game{
 		this.debugPhysics = false;
 		this.fixedTimeStep = 1.0/60.0;
 		this.js = { forward:0, turn:0 };
-        this.assetsPath = "../assets/";
+        this.assetsPath = "/petit-turismo/assets/";
 		
 		this.messages = { 
 			text:[ 
@@ -47,14 +47,14 @@ class Game{
 		
 		const options = {
 			assets:[
-                "../assets/rc_time_trial.fbx",
-				"../assets/images/logo.png",
-				"../assets/images/nx.jpg",
-				"../assets/images/px.jpg",
-				"../assets/images/ny.jpg",
-				"../assets/images/py.jpg",
-				"../assets/images/nz.jpg",
-				"../assets/images/pz.jpg",
+                "/petit-turismo/assets/rc_time_trial.fbx",
+				"/petit-turismo/assets/images/logo.png",
+				"/petit-turismo/assets/images/nx.jpg",
+				"/petit-turismo/assets/images/px.jpg",
+				"/petit-turismo/assets/images/ny.jpg",
+				"/petit-turismo/assets/images/py.jpg",
+				"/petit-turismo/assets/images/nz.jpg",
+				"/petit-turismo/assets/images/pz.jpg",
                 `${this.assetsPath}sfx/bump.${sfxExt}`,
                 `${this.assetsPath}sfx/click.${sfxExt}`,
                 `${this.assetsPath}sfx/engine.${sfxExt}`,
@@ -298,7 +298,7 @@ class Game{
 		const game = this;
 		const loader = new THREE.FBXLoader();
 		
-		loader.load( '../assets/rc_time_trial.fbx', 
+		loader.load( '/petit-turismo/assets/rc_time_trial.fbx', 
 		function ( object ){
 			let material, map, index, maps;
 			const euler = new THREE.Euler();
@@ -375,7 +375,7 @@ class Game{
 			game.scene.add( object );
 			
 			const tloader = new THREE.CubeTextureLoader();
-			tloader.setPath( '../assets/images/' );
+			tloader.setPath( '/petit-turismo/assets/images/' );
 
 			var textureCube = tloader.load( [
 				'px.jpg', 'nx.jpg',
